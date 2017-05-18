@@ -1,0 +1,22 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        <video src="/Content/movie.mp4" controls></video>
+        <video src="~/Content/movie.mp4" controls></video>
+        <video src="~/Home/GetVideo" controls></video>
+        <video src="@Url.Action("GetVideo")" controls></video>
+        <video src="@Url.Action("GetVideo","Home")"  controls autoplay></video>
+    </div>
+</body>
+</html>
